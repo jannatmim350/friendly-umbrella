@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title> Js Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>First Number</td><!-- comment -->
+                <td><input type="number" id="firstNumber"></td>
+            </tr>
+            <tr>
+                <td>Last Number</td><!-- comment -->
+                <td><input type="number" id="lastNumber"></td>
+            </tr>
+            <tr>
+                <td>Result</td><!-- comment -->
+                <td><input type="text" id="result"></td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" id="plus" value="+">
+                <input type="submit" id="minus" value="-"><!-- comment -->
+                <input type="submit" id="multi" value="*"><!-- comment -->
+                <input type="submit" id="divi" value="/"><!-- comment -->
+                <input type="submit" id="reminder" value="%"><!-- comment -->
+                </td>
+            </tr>
+         </table>
+         <script>
+            var plusBtn= document.getElementById('plus');
+            plusBtn.onclick= function(){
+                var firstNumber= Number(document.getElementById('firstNumber').value);
+                var lastNumber= Number(document.getElementById('lastNumber').value);
+                var result= firstNumber+lastNumber;
+                document.getElementById('result').value=result;
+            };
+            var plusBtn= document.getElementById('minus');
+            plusBtn.onclick= function(){
+                var firstNumber= Number(document.getElementById('firstNumber').value);
+                var lastNumber= Number(document.getElementById('lastNumber').value);
+                var result= firstNumber-lastNumber;
+                document.getElementById('result').value=result;
+            };
+            var plusBtn= document.getElementById('multi');
+            plusBtn.onclick= function(){
+                var firstNumber= Number(document.getElementById('firstNumber').value);
+                var lastNumber= Number(document.getElementById('lastNumber').value);
+                var result= firstNumber*lastNumber;
+                document.getElementById('result').value=result;
+            };
+            var plusBtn= document.getElementById('divi');
+            plusBtn.onclick= function(){
+                var firstNumber= Number(document.getElementById('firstNumber').value);
+                var lastNumber= Number(document.getElementById('lastNumber').value);
+                var result= firstNumber/lastNumber;
+                document.getElementById('result').value=result;
+            };
+            var plusBtn= document.getElementById('reminder');
+            plusBtn.onclick= function(){
+                var firstNumber= Number(document.getElementById('firstNumber').value);
+                var lastNumber= Number(document.getElementById('lastNumber').value);
+                var result= firstNumber%lastNumber;
+                document.getElementById('result').value='result';
+            };
+            
+        </script>
+    </body>
+</html>
